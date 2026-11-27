@@ -1,0 +1,23 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="windows-mica-backdrop-customizer.App/windows-mica-backdrop-customizer.App.csproj">
+    <Platform Solution="*|ARM64" Project="arm64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+  <Project Path="windows-mica-backdrop-customizer.CoreUI/windows-mica-backdrop-customizer.CoreUI.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="windows-mica-backdrop-customizer.Models/windows-mica-backdrop-customizer.Models.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>

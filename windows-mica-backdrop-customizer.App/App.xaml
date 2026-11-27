@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="windows-mica-backdrop-customizer.App.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:windows-mica-backdrop-customizer.App.Controls"
+    xmlns:helpers="using:windows-mica-backdrop-customizer.App.Helpers"
+    xmlns:local="using:windows-mica-backdrop-customizer.App">
+    <Application.Resources>
+        <XamlControlsResources>
+            <XamlControlsResources.MergedDictionaries>
+                <ResourceDictionary Source="/Controls/Navigation/NavigationView.xaml" />
+                <ResourceDictionary Source="/Controls/SettingsPageControl.xaml" />
+                <ResourceDictionary Source="/Controls/WindowPickerButton.xaml" />
+                <controls:CustomColorPickerTemplate />
+                <ResourceDictionary>
+                    <Style TargetType="FontIcon">
+                        <Setter Property="FontFamily" Value="{StaticResource SymbolThemeFontFamily}" />
+                    </Style>
+                    <helpers:ColorConverter x:Key="ColorConverter" />
+                </ResourceDictionary>
+            </XamlControlsResources.MergedDictionaries>
+        </XamlControlsResources>
+    </Application.Resources>
+</Application>

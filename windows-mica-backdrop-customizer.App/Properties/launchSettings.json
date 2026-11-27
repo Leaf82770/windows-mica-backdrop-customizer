@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "windows-mica-backdrop-customizer.App (Package)": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    },
+    "windows-mica-backdrop-customizer.App (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
